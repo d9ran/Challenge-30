@@ -9,7 +9,7 @@ const opciones = ["piedra" , "papel" , "tijera"];
 let opcionJugador = "";
 
 while (!opciones.includes(opcionJugador)){
-    opcionJugador = prompt("Qué vas a tirar? Piedra, papel o tijera?");
+    opcionJugador = prompt("Qué vas a tirar? Piedra, papel o tijera?").toLowerCase();
     if (!opciones.includes(opcionJugador)){
         alert("Palabra inapropiada e inválida.");
     }
